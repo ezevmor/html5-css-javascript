@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Elio Zevallos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row top-60">
+				<div class="col-6">
+					<h3>Sígueme<h3>
+				</div>
+				<div class="col-6">
+					<h3>...O deja un mensaje<h3>
+				</div>
+			</div>
+		</div>
+	</header>
+	<nav class="navbar">
+		<ul class="navbar-list">
+			<li class="navbar-item"><a href="index.html">Inicio</a></li>
+			<li class="navbar-item"><a href="index.html#quien-soy">Quien soy</a></li>
+			<li class="navbar-item"><a href="index.html#experiencia">Experiencia</a></li>
+			<li class="navbar-item"><a href="index.html#sobre-mi">Sobre mi</a></li>
+			<li class="navbar-item"><a class="active" href="#">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<div class="container">	
+		<section class="row" id="contact-form">
+			<div class="col-6">
+				<ul class="icon-list">
+					<li class="icon">
+						<a href="https://twitter.com/e_zevallos" target="_blank">
+							<i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="icon">
+						<a href="https://es.linkedin.com/in/elio-zevallos-7a6a5a51" target="_blank">
+							<i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li class="icon">
+						<a href="https://plus.google.com/115307349954175123545/about" target="_blank">
+							<i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-6">
+				<form id="contact-form" class="container" novalidate>
+					<div class="row">
+						<div class="col-5"><label for="nombre">Nombre*</label></div>
+						<div class="col-7"><input type="text" id="nombre" name="nombre" required></div>
+					</div>
+					<div class="row">
+						<div class="col-5"><label for="email">Email*</label></div>
+						<div class="col-7"><input type="text" id="email" name="email" required></div>
+					</div>
+					<div class="row">
+						<div class="col-5"><label for="numero">Numero de Contacto*</label></div>
+						<div class="col-7"><input type="text" id="numero" name="numero"></div>
+					</div>
+					<div class="row">
+						<div class="col-5"><span>como me has conocido?</span></div>
+						<div class="col-7">
+							<ul class="options-list">
+								<li>
+									<input type="radio" id="opcion-1" name="opcion" value="opcion1" required>
+									<label for="opcion-1">Busqueda internet</label>
+								</li>
+								<li>
+									<input type="radio" id="opcion-2" name="opcion" value="opcion2" required>
+									<label for="opcion-2">Referencia</label>
+								</li>
+								<li>
+									<input type="radio" id="opcion-3" name="opcion" value="opcion3" required>
+									<label for="opcion-3">Red social</label>
+								</li>
+								<li>
+								<li>
+									<input type="radio" id="opcion-4" name="opcion" value="opcion4" required>
+									<label for="opcion-4">otro</label>
+									<input class="hidden" type="text" id="otro" name="otro" required>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-5"><label for="comentario">Comentario</label></div>
+						<div class="col-7">
+							<textarea rows="4" cols="20" id="comentario" name="comentario"></textarea>
+							<small>*Máximo 150 palabras</small> <br>
+							<small>*Sólo caracteres alfanuméricos</small>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-7 right">
+							<button class="button" onclick="enviar()" disable="false">
+								<span id="send-label">Enviar</span>
+								<!-- <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i> -->
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+
+	<div class="footer">
+		<footer>
+			Elio Zevallos More &copy; 2016
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="js/libs/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/modernizr-custom.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>
